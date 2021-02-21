@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Red Velvet Survey Form</title>
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+    <h1 class="title" id="title">Red Velvet Survey Form</h1>
+    <p id="description" class="description">Thank you for taking the time to answer this Survey</p>
+  </header>
+
+  <form class="survey-form" id="survey-form">
+    <div class="form-group">
+      <label for="name" class="name-label" id="name-label">
+        Name
+      </label>
+      <input type="text" name="name" id="name" class="form-control"  placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="email-label" id="email-label">
+        Email
+      </label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="number" class="age-label" id="number-label">
+        Age (optional)
+      </label>
+      <input type="number" name="age" class="form-control" id="number" min="14" max="90" placeholder="Age" >
+    </div>
+
+    <div class="form-group">
+      <label for="bias-label" class="bias-label" id="bias-label">
+        Who is your bias in Red Velvet?
+      </label>
+      <select id="dropdown" name="bias" class="form-control" required>
+        <option disabled selected value>Select your bias</option>
+        <option value="Joy">Joy</option>
+        <option value="Wendy">Wendy</option>
+        <option value="Irene">Irene</option>
+        <option value="Seulgi">Seulgi</option>
+        <option value="Yeri">Yeri</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Red Velvet to a friend?</p>
+      <label>
+        <input type="radio" name="user-recommend" value="definetely" class="input-radio">
+        Definetely
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" value="Maybe" class="input-radio">
+        Maybe
+      </label>
+      <label>
+        <input type="radio" name="user-recommend" value="notrecommend" class="input-radio">
+        Not recommend
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="mv-label" class="mv-label" id="mv-label">
+        What is your favorite music video in Red Velvet?
+      </label>
+      <select id="dropdown" name="mv" class="form-control" required>
+        <option disabled selected value>Select your favorite M/V</option>
+        <option value="peek-a-boo">Peek a Boo</option>
+        <option value="psycho">Psycho</option>
+        <option value="russian-roulette">Russian Roulette</option>
+        <option value="bad-boy">Bad Boy</option>
+        <option value="zimzalabim">Zimsalabim</option>
+      </select>
+    </div>
+
+    
+    <div class="form-group">
+      <label for="song-label" class="song-label" id="song-label">
+        <p>What are the songs of Red Velvet do you like? <span class="small">(Check all that apply)</span></p>
+      </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="Psycho">
+          Psycho
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="bad-boy">
+          Bad Boy
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="russian-roulette">
+          Russian Roulette
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="peek-a-boo">
+          Peek-A-Boo
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="red-flavor">
+          Red Flavor
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="cookie-jar">
+          #Cookie Jar
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="ice-cream-cake">
+          Ice Cream Cake
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="sunny-side-up">
+          Sunny Side Up!
+        </label>
+        <label>
+          <input type="checkbox" class="input-checkbox" name="like" value="kingdom-come">
+          Kingdom Come
+        </label>
+
+    </div>
+
+    <div class="form-group">
+        <p>What message would you like to say to Red Velvet?</p>
+      <textarea name="message" class="textarea" id="message" cols="30" rows="5" placeholder="Enter your message here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
